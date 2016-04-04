@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7EDB90B11CB2C242002D07F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB90B01CB2C242002D07F8 /* main.m */; };
 		7EDB90B41CB2C242002D07F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB90B31CB2C242002D07F8 /* AppDelegate.m */; };
-		7EDB90B71CB2C242002D07F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB90B61CB2C242002D07F8 /* ViewController.m */; };
+		7EDB90B71CB2C242002D07F8 /* ConversionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB90B61CB2C242002D07F8 /* ConversionViewController.m */; };
 		7EDB90BA1CB2C242002D07F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB90B81CB2C242002D07F8 /* Main.storyboard */; };
 		7EDB90BC1CB2C242002D07F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB90BB1CB2C242002D07F8 /* Assets.xcassets */; };
 		7EDB90BF1CB2C242002D07F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB90BD1CB2C242002D07F8 /* LaunchScreen.storyboard */; };
@@ -39,8 +39,8 @@
 		7EDB90B01CB2C242002D07F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7EDB90B21CB2C242002D07F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7EDB90B31CB2C242002D07F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7EDB90B51CB2C242002D07F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7EDB90B61CB2C242002D07F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7EDB90B51CB2C242002D07F8 /* ConversionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConversionViewController.h; sourceTree = "<group>"; };
+		7EDB90B61CB2C242002D07F8 /* ConversionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConversionViewController.m; sourceTree = "<group>"; };
 		7EDB90B91CB2C242002D07F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7EDB90BB1CB2C242002D07F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EDB90BE1CB2C242002D07F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 			children = (
 				7EDB90B21CB2C242002D07F8 /* AppDelegate.h */,
 				7EDB90B31CB2C242002D07F8 /* AppDelegate.m */,
-				7EDB90B51CB2C242002D07F8 /* ViewController.h */,
-				7EDB90B61CB2C242002D07F8 /* ViewController.m */,
+				7EDB90B51CB2C242002D07F8 /* ConversionViewController.h */,
+				7EDB90B61CB2C242002D07F8 /* ConversionViewController.m */,
 				7EDB90B81CB2C242002D07F8 /* Main.storyboard */,
 				7EDB90BB1CB2C242002D07F8 /* Assets.xcassets */,
 				7EDB90BD1CB2C242002D07F8 /* LaunchScreen.storyboard */,
@@ -270,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EDB90B71CB2C242002D07F8 /* ViewController.m in Sources */,
+				7EDB90B71CB2C242002D07F8 /* ConversionViewController.m in Sources */,
 				7EDB90B41CB2C242002D07F8 /* AppDelegate.m in Sources */,
 				7EDB90B11CB2C242002D07F8 /* main.m in Sources */,
 			);
@@ -496,6 +496,7 @@
 				7EDB90DB1CB2C242002D07F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EDB90DC1CB2C242002D07F8 /* Build configuration list for PBXNativeTarget "View demoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +505,7 @@
 				7EDB90DE1CB2C242002D07F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EDB90DF1CB2C242002D07F8 /* Build configuration list for PBXNativeTarget "View demoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +514,7 @@
 				7EDB90E11CB2C242002D07F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
