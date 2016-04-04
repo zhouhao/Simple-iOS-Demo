@@ -8,7 +8,7 @@
 
 #import "ConversionViewController.h"
 
-@interface ConversionViewController ()
+@interface ConversionViewController () <UITextFieldDelegate>
 
 @property (nonatomic) IBOutlet UILabel *celsiusLabel;
 @property (nonatomic) IBOutlet UITextField *fahrenheitField;
@@ -78,6 +78,13 @@
         formatter.maximumFractionDigits = 1;
     }
     return formatter;
+}
+
+// MARK: - Text Field Delegate
+-(BOOL) textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    NSLog(@"Current text: %@", textField.text);
+    NSLog(@"Replacement text: %@", string);
+    return YES;
 }
 
 @end
