@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E5236141CB2F75F00B7E875 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5236131CB2F75F00B7E875 /* MapKit.framework */; };
 		7EDB90B11CB2C242002D07F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB90B01CB2C242002D07F8 /* main.m */; };
 		7EDB90B41CB2C242002D07F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB90B31CB2C242002D07F8 /* AppDelegate.m */; };
 		7EDB90B71CB2C242002D07F8 /* ConversionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB90B61CB2C242002D07F8 /* ConversionViewController.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E5236131CB2F75F00B7E875 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7EDB90AC1CB2C242002D07F8 /* View demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "View demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDB90B01CB2C242002D07F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7EDB90B21CB2C242002D07F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E5236141CB2F75F00B7E875 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		7EDB90A31CB2C242002D07F8 = {
 			isa = PBXGroup;
 			children = (
+				7E5236131CB2F75F00B7E875 /* MapKit.framework */,
 				7EDB90AE1CB2C242002D07F8 /* View demo */,
 				7EDB90C81CB2C242002D07F8 /* View demoTests */,
 				7EDB90D31CB2C242002D07F8 /* View demoUITests */,
