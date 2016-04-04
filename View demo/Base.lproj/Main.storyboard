@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Convert-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ConversionViewController" sceneMemberID="viewController">
@@ -79,7 +79,7 @@
                             <outletCollection property="gestureRecognizers" destination="fzo-5F-aAa" appends="YES" id="5aZ-tW-txQ"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="T4q-nd-znl"/>
+                    <tabBarItem key="tabBarItem" title="Convert" image="ConvertIcon" selectedImage="ConvertIcon" id="T4q-nd-znl"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="celsiusLabel" destination="7uS-86-DNk" id="xak-B6-lfC"/>
@@ -102,7 +102,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </mapView>
-                    <tabBarItem key="tabBarItem" title="Item" id="B1b-xS-Ecg"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="MapIcon" id="B1b-xS-Ecg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yoo-vD-9G4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,8 +118,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="bFW-qk-CZf" kind="relationship" relationship="viewControllers" id="Fre-3J-fB9"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="DMO-xT-eIf"/>
+                        <segue destination="bFW-qk-CZf" kind="relationship" relationship="viewControllers" id="Fre-3J-fB9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQm-k2-LKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -127,4 +127,8 @@
             <point key="canvasLocation" x="1119" y="416"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ConvertIcon" width="49" height="33"/>
+        <image name="MapIcon" width="49" height="33"/>
+    </resources>
 </document>
