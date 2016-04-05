@@ -11,7 +11,7 @@
 
 @interface MapViewController ()
 
-@property (nonatomic) MKMapView *mapView;
+@property(nonatomic) MKMapView *mapView;
 @end
 
 @implementation MapViewController
@@ -19,6 +19,23 @@
 - (void)loadView {
     self.mapView = [MKMapView new];
     self.view = self.mapView;
+
+    NSArray *segItems = @[@"Standard", @"Hybrid", @"Satellite"];
+    UISegmentedControl *segControl = [[UISegmentedControl alloc] initWithItems:segItems];
+    segControl.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
+    segControl.selectedSegmentIndex = 0;
+
+    segControl.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:segControl];
+
+    NSLayoutConstraint *topConstraint = [segControl.topAnchor constraintEqualToAnchor:self.topLayoutGuide.bottomAnchor constant:8];
+    NSLayoutConstraint *leadingConstraint = [segControl.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor];
+    NSLayoutConstraint *trailingConstraint = [segControl.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor];
+
+    topConstraint.active = YES;
+    leadingConstraint.active = YES;
+    trailingConstraint.active = YES;
+
 }
 
 - (void)viewDidLoad {
