@@ -10,11 +10,11 @@
 
 @interface ConversionViewController () <UITextFieldDelegate>
 
-@property (nonatomic) IBOutlet UILabel *celsiusLabel;
-@property (nonatomic) IBOutlet UITextField *fahrenheitField;
+@property(nonatomic) IBOutlet UILabel *celsiusLabel;
+@property(nonatomic) IBOutlet UITextField *fahrenheitField;
 
-@property (nonatomic) double fahrenheitValue;
-@property (nonatomic) double celsiusValue;
+@property(nonatomic) double fahrenheitValue;
+@property(nonatomic) double celsiusValue;
 
 @end
 
@@ -37,43 +37,43 @@
     [firstView addSubview:secondView];
      **/
 
-    
+
 }
 
--(void) setFahrenheitValue:(double)fahrenheitValue {
+- (void)setFahrenheitValue:(double)fahrenheitValue {
     _fahrenheitValue = fahrenheitValue;
     [self updateCelsiuaLabel];
 }
 
--(void) setCelsiusValue:(double)celsiusValue {
-    self.fahrenheitValue = celsiusValue *(9.0/5.0) + 32;
+- (void)setCelsiusValue:(double)celsiusValue {
+    self.fahrenheitValue = celsiusValue * (9.0 / 5.0) + 32;
 }
 
--(double) celsiusValue {
-    return (self.fahrenheitValue - 32) *(5.9/9.0);
+- (double)celsiusValue {
+    return (self.fahrenheitValue - 32) * (5.9 / 9.0);
 }
 
--(void) updateCelsiuaLabel{
+- (void)updateCelsiuaLabel {
     self.celsiusLabel.text = [self.numberFormatter stringFromNumber:@(self.celsiusValue)];
 
 }
 
 - (IBAction)fahrenheitFieldEditingChanged:(UITextField *)textField {
     NSNumber *num = [self.numberFormatter numberFromString:textField.text];
-    if(num != nil){
+    if (num != nil) {
         self.fahrenheitValue = num.doubleValue;
     } else {
         self.celsiusLabel.text = @"???";
     }
 }
 
--(IBAction)dismissKeyboard:(id)sender {
+- (IBAction)dismissKeyboard:(id)sender {
     [self.fahrenheitField resignFirstResponder];
 }
 
-- (NSNumberFormatter *) numberFormatter{
+- (NSNumberFormatter *)numberFormatter {
     static NSNumberFormatter *formatter = nil;
-    if(formatter == nil){
+    if (formatter == nil) {
         formatter = [NSNumberFormatter new];
         formatter.numberStyle = NSNumberFormatterDecimalStyle;
         formatter.minimumFractionDigits = 0;
@@ -83,10 +83,15 @@
 }
 
 // MARK: - Text Field Delegate
--(BOOL) textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
-    NSLog(@"Current text: %@", textField.text);
-    NSLog(@"Replacement text: %@", string);
-    return YES;
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    NSRange existingRange = [textField.text rangeOfString:@"."];
+    BOOL hasExistingDecimalSeparator = existingRange.location != NSNotFound;
+    NSRange newRange = [string rangeOfString:@"."];
+    BOOL wantsNewDecimalSeparator = newRange.location != NSNotFound;
+
+    return !(hasExistingDecimalSeparator && wantsNewDecimalSeparator);
+
+
 }
 
 @end
