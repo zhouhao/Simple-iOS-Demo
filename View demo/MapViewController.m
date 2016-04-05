@@ -29,8 +29,10 @@
     [self.view addSubview:segControl];
 
     NSLayoutConstraint *topConstraint = [segControl.topAnchor constraintEqualToAnchor:self.topLayoutGuide.bottomAnchor constant:8];
-    NSLayoutConstraint *leadingConstraint = [segControl.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor];
-    NSLayoutConstraint *trailingConstraint = [segControl.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor];
+
+    UILayoutGuide *margins = self.view.layoutMarginsGuide;
+    NSLayoutConstraint *leadingConstraint = [segControl.leadingAnchor constraintEqualToAnchor:margins.leadingAnchor];
+    NSLayoutConstraint *trailingConstraint = [segControl.trailingAnchor constraintEqualToAnchor:margins.trailingAnchor];
 
     topConstraint.active = YES;
     leadingConstraint.active = YES;
