@@ -22,6 +22,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"ConversionViewController loaded its view.");
+
     // Do any additional setup after loading the view, typically from a nib.
     /**
     CGRect firstFrame = CGRectMake(160,240, 100,150);

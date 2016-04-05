@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7E5236141CB2F75F00B7E875 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5236131CB2F75F00B7E875 /* MapKit.framework */; };
+		7E5236191CB3537E00B7E875 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5236181CB3537E00B7E875 /* MapViewController.m */; };
 		7EDB90B11CB2C242002D07F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB90B01CB2C242002D07F8 /* main.m */; };
 		7EDB90B41CB2C242002D07F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB90B31CB2C242002D07F8 /* AppDelegate.m */; };
 		7EDB90B71CB2C242002D07F8 /* ConversionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB90B61CB2C242002D07F8 /* ConversionViewController.m */; };
@@ -37,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		7E5236131CB2F75F00B7E875 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7E5236171CB3537E00B7E875 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		7E5236181CB3537E00B7E875 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		7EDB90AC1CB2C242002D07F8 /* View demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "View demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDB90B01CB2C242002D07F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7EDB90B21CB2C242002D07F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,6 +117,8 @@
 				7EDB90BD1CB2C242002D07F8 /* LaunchScreen.storyboard */,
 				7EDB90C01CB2C242002D07F8 /* Info.plist */,
 				7EDB90AF1CB2C242002D07F8 /* Supporting Files */,
+				7E5236171CB3537E00B7E875 /* MapViewController.h */,
+				7E5236181CB3537E00B7E875 /* MapViewController.m */,
 			);
 			path = "View demo";
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 				7EDB90B71CB2C242002D07F8 /* ConversionViewController.m in Sources */,
 				7EDB90B41CB2C242002D07F8 /* AppDelegate.m in Sources */,
 				7EDB90B11CB2C242002D07F8 /* main.m in Sources */,
+				7E5236191CB3537E00B7E875 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

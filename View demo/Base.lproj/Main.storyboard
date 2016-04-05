@@ -94,17 +94,17 @@
                 </tapGestureRecognizer>
             </objects>
         </scene>
-        <!--Item-->
+        <!--Maps-->
         <scene sceneID="iHV-ee-eNj">
             <objects>
-                <viewController id="bFW-qk-CZf" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yoo-vD-9G4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="bFW-qk-CZf" customClass="MapViewController" sceneMemberID="viewController">
                     <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="8bP-fE-l53">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </mapView>
-                    <tabBarItem key="tabBarItem" title="Item" image="MapIcon" id="B1b-xS-Ecg"/>
+                    <tabBarItem key="tabBarItem" title="Maps" image="MapIcon" selectedImage="MapIcon" id="B1b-xS-Ecg"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yoo-vD-9G4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1870" y="380"/>
         </scene>
