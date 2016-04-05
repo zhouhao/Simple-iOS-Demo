@@ -56,6 +56,8 @@
 		7EDB90D01CB2C242002D07F8 /* View demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "View demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDB90D41CB2C242002D07F8 /* View_demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = View_demoUITests.m; sourceTree = "<group>"; };
 		7EDB90D61CB2C242002D07F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EF629401CB42A2100ABCAB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		7EF629411CB42A9700ABCAB7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,6 +324,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				7EDB90B91CB2C242002D07F8 /* Base */,
+				7EF629401CB42A2100ABCAB7 /* en */,
+				7EF629411CB42A9700ABCAB7 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
