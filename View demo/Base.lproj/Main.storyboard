@@ -82,7 +82,7 @@
                     <tabBarItem key="tabBarItem" title="Convert" image="ConvertIcon" selectedImage="ConvertIcon" id="T4q-nd-znl"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="celsiusLabel" destination="7uS-86-DNk" id="xak-B6-lfC"/>
+                        <outlet property="celsiusLabel" destination="nPo-nJ-8AF" id="xsd-Nv-JxX"/>
                         <outlet property="fahrenheitField" destination="4dC-ds-vj6" id="grz-yn-sVz"/>
                     </connections>
                 </viewController>
